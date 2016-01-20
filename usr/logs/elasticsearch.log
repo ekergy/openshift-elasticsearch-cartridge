@@ -1,0 +1,16 @@
+[2016-01-20 10:26:58,193][INFO ][node                     ] [Spirit of '76] version[2.1.1], pid[5818], build[40e2c53/2015-12-15T13:05:55Z]
+[2016-01-20 10:26:58,194][INFO ][node                     ] [Spirit of '76] initializing ...
+[2016-01-20 10:26:58,261][INFO ][plugins                  ] [Spirit of '76] loaded [], sites []
+[2016-01-20 10:26:58,281][INFO ][env                      ] [Spirit of '76] using [1] data paths, mounts [[/ (/dev/sda10)]], net usable_space [33.4gb], net total_space [49gb], spins? [possibly], types [ext4]
+[2016-01-20 10:26:59,905][INFO ][node                     ] [Spirit of '76] initialized
+[2016-01-20 10:26:59,905][INFO ][node                     ] [Spirit of '76] starting ...
+[2016-01-20 10:27:00,019][INFO ][transport                ] [Spirit of '76] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2016-01-20 10:27:00,032][INFO ][discovery                ] [Spirit of '76] elasticsearch/iy-lJrehQ_OmFpiTZdITTg
+[2016-01-20 10:27:03,093][INFO ][cluster.service          ] [Spirit of '76] new_master {Spirit of '76}{iy-lJrehQ_OmFpiTZdITTg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-01-20 10:27:03,115][INFO ][http                     ] [Spirit of '76] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2016-01-20 10:27:03,116][INFO ][node                     ] [Spirit of '76] started
+[2016-01-20 10:27:03,189][INFO ][gateway                  ] [Spirit of '76] recovered [0] indices into cluster_state
+[2016-01-20 10:27:07,578][INFO ][node                     ] [Spirit of '76] stopping ...
+[2016-01-20 10:27:07,597][INFO ][node                     ] [Spirit of '76] stopped
+[2016-01-20 10:27:07,597][INFO ][node                     ] [Spirit of '76] closing ...
+[2016-01-20 10:27:07,608][INFO ][node                     ] [Spirit of '76] closed
