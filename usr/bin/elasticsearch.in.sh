@@ -2,6 +2,8 @@
 
 ES_CLASSPATH=$ES_CLASSPATH:$ES_HOME/lib/elasticsearch-*.jar:$ES_HOME/lib/*:$ES_HOME/lib/sigar/*
 
+echo $ES_CLASSPATH
+
 if [ "x$ES_MIN_MEM" = "x" ]; then
     ES_MIN_MEM=256m
 fi
