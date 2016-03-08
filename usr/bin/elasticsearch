@@ -126,7 +126,8 @@ launch_service()
     if [ "${ELASTICSEARCH_VERSION%%.*}" == '1' ]; then
         class_name=org.elasticsearch.bootstrap.Elasticsearch
     else
-        class_name=org.elasticsearch.bootstrap.ElasticSearch
+        #class_name=org.elasticsearch.bootstrap.ElasticSearch
+        class_name=org.elasticsearch.bootstrap.Elasticsearch
     fi
 
     # The es-foreground option will tell ElasticSearch not to close stdout/stderr, but it's up to us not to background.
