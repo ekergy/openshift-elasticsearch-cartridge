@@ -212,7 +212,7 @@ transport.publish_port: ${OPENSHIFT_ELASTICSEARCH_TRANSPORT_PROXY_PORT}
 
 # Set a custom port for the node to node communication (9300 by default):
 #
-transport.tcp.port: 9300
+transport.tcp.port: ${OPENSHIFT_ELASTICSEARCH_TRANSPORT_PORT}
 
 # Enable compression for all communication between nodes (disabled by default):
 #
@@ -220,7 +220,9 @@ transport.tcp.port: 9300
 
 # Set a custom port to listen for HTTP traffic:
 #
-http.port: 9200
+http.port: ${OPENSHIFT_ELASTICSEARCH_PORT}
+
+http.publish_port: ${OPENSHIFT_ELASTICSEARCH_PORT}
 
 # Set a custom allowed content length:
 #
