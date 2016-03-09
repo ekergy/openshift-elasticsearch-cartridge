@@ -133,12 +133,12 @@ launch_service()
     # The es-foreground option will tell ElasticSearch not to close stdout/stderr, but it's up to us not to background.
     if [ "x$foreground" != "x" ]; then
         es_parms="$es_parms -Des.foreground=yes"
-        exec "$JAVA" $JAVA_OPTS $ES_JAVA_OPTS $es_parms -Des.path.home="$ES_HOME" -cp "$ES_CLASSPATH" $props $class_name
+        exec "$JAVA" $JAVA_OPTS $ES_JAVA_OPTS $es_parms -Des.path.home="$ES_HOME" -cp "$ES_CLASSPATH" $props $class_name start
         # exec without running it in the background, makes it replace this shell, we'll never get here...
         # no need to return something
     else
         # Startup ElasticSearch, background it, and write the pid.
-        exec "$JAVA" $JAVA_OPTS $ES_JAVA_OPTS $es_parms -Des.path.home="$ES_HOME" -cp "$ES_CLASSPATH" $props $class_name <&- &
+        exec "$JAVA" $JAVA_OPTS $ES_JAVA_OPTS $es_parms -Des.path.home="$ES_HOME" -cp "$ES_CLASSPATH" $props $class_name start <&- &
         return $?
     fi
 }
